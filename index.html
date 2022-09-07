@@ -458,16 +458,21 @@
             </li>
           </ul>
         </div>
-        <div>
+        <form>
           <p class="tx-footer">Підпишіться на розсилку</p>
-          <input type="text" class="footer-input" placeholder="E-mail" />
+          <input
+            type="email"
+            class="footer-input"
+            name="Email_adress"
+            placeholder="E-mail"
+            required
+          />
           <button type="submit" class="footer-button">
             Підписатися
-            <svg aria-label="розсилка" class="" width="24px" height="24px">
+            <svg aria-label="розсилка" class="ico-m" width="24px" height="24px">
               <use href="./images/icons.svg#icon-send-f"></use>
             </svg>
           </button>
-        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
