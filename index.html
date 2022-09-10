@@ -458,16 +458,16 @@
             </li>
           </ul>
         </div>
+        <p class="tx-footer">Підпишіться на розсилку</p>
         <form class="sub-footer">
-          <p class="tx-footer">Підпишіться на розсилку</p>
           <label>
-          <input
-            type="email"
-            class="footer-input"
-            name="Email_adress"
-            placeholder="E-mail"
-            required
-          />
+            <input
+              type="email"
+              class="footer-input"
+              name="Email_adress"
+              placeholder="E-mail"
+              required
+            />
           </label>
           <button type="submit" class="footer-button">
             Підписатися
@@ -475,6 +475,7 @@
               <use href="./images/icons.svg#icon-send-f"></use>
             </svg>
           </button>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -487,52 +488,88 @@
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="form-to-modal">
           <label class="modal-lab">
-           <span class="modal-name">Ім'я</span>
-           <span class="di-imp-mod"> 
-            <input class="input-modal" type="text" name="user_name"
-            required 
-            pattern="[a-zA-Zа-яА-ЯіІїЇ]+">
-            <svg aria-label="icon-user" class="modal-icon" width="12" height="12">
-                  <use href="./images/icons.svg#icon-person-modal"></use>
-                </svg>
-              </span>
+            <span class="modal-name">Ім'я</span>
+            <span class="di-imp-mod">
+              <input
+                class="input-modal"
+                type="text"
+                name="user_name"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+              />
+              <svg
+                aria-label="icon-user"
+                class="modal-icon"
+                width="12"
+                height="12"
+              >
+                <use href="./images/icons.svg#icon-person-modal"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-lab">
             <span class="modal-name">Телефон</span>
-                       <span class="di-imp-mod"> 
-                        <input 
-                        class="input-modal" 
-                        type="tel" name="user_phone"
-            required
-             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}+"
-             >
-             <svg aria-label="icon-tel" class="modal-icon" width="13" height="13">
-                  <use href="./images/icons.svg#icon-phone-modal"></use>
-                </svg>
-                       </span>
+            <span class="di-imp-mod">
+              <input
+                class="input-modal"
+                type="tel"
+                name="user_phone"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}+"
+              />
+              <svg
+                aria-label="icon-tel"
+                class="modal-icon"
+                width="13"
+                height="13"
+              >
+                <use href="./images/icons.svg#icon-phone-modal"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-lab">
-          <span class="modal-name">Пошта</span>
-                     <span class="di-imp-mod"> 
-                       <input class="input-modal" type="email"
-            name="mail_user"
-            required>
-            <svg aria-label="icon-mail" class="modal-icon" width="15" height="12">
-                  <use href="./images/icons.svg#icon-email-modal"></use>
-                </svg>
-                     </span>
+            <span class="modal-name">Пошта</span>
+            <span class="di-imp-mod">
+              <input
+                class="input-modal"
+                type="email"
+                name="mail_user"
+                required
+              />
+              <svg
+                aria-label="icon-mail"
+                class="modal-icon"
+                width="15"
+                height="12"
+              >
+                <use href="./images/icons.svg#icon-email-modal"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-lab">
-            <span class="modal-name">Коментар</span> 
-            <textarea name="users_comentary" id="" cols="30" rows="10" class="modal-comments" placeholder="Введіть текст"></textarea>
+            <span class="modal-name">Коментар</span>
+            <textarea
+              name="users_comentary"
+              id=""
+              cols="30"
+              rows="10"
+              class="modal-comments"
+              placeholder="Введіть текст"
+            ></textarea>
           </label>
           <label class="modal-check-field">
-            <input type="checkbox" class="modal-check" name="users_policy">
+            <input type="checkbox" class="modal-check" name="users_policy" />
             <svg aria-label="checkbox_modal" class="checkbox-modal">
-              <use class="ico-hide-checkbox" href="./images/icons.svg#ok-modal">
-              </use>
+              <use
+                class="ico-hide-checkbox"
+                href="./images/icons.svg#ok-modal"
+              ></use>
             </svg>
-Погоджуюсь з россилкою, та приймаю&nbsp;<a class="aga-konechno" href="#">Умови договору</a>
+            Погоджуюсь з россилкою, та приймаю&nbsp;<a
+              class="aga-konechno"
+              href="#"
+              >Умови договору</a
+            >
           </label>
           <button type="submit" class="button-modal">Відправити</button>
         </form>
