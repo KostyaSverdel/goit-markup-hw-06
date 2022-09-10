@@ -625,8 +625,7 @@ ul {
   transition: opacity 250ms ease, visibility 250ms ease,
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*.backdrop.is-hidden*/
- {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -637,8 +636,8 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
+  width: 530px;
+  height: 100%;
   padding: 40px 40px;
   background-color: var(--bacground-color);
 }
@@ -656,6 +655,10 @@ ul {
   left: auto;
   top: 8px;
   right: 8px;
+}
+.knopka-modal:hover,
+.knopka-modal:focus {
+  fill: var(--hovers-and-logo-color);
 }
 .modal-title {
   font-family: inherit;
@@ -728,6 +731,69 @@ ul {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: inherit;
+}
+.modal-check {
+  appearance: none;
+  position: absolute;
+}
+.checkbox-modal {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 1px solid;
+  border-radius: 2px;
+  color: var(--titel-link-color);
+  cursor: pointer;
+  margin-right: 10px;
+}
+.ico-hide-checkbox {
+  display: none;
+}
+.modal-check:checked + .checkbox-modal {
+  background-color: var(--hovers-and-logo-color);
+  border: none;
+}
+.modal-check:checked + .checkbox-modal .ico-hide-checkbox {
+  display: block;
+  fill: var(--bacground-color);
+}
+.modal-check:focus + .checkbox-modal {
+  box-shadow: 0 0 0 2px var(--hovers-and-logo-color);
+}
+.aga-konechno {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--hovers-and-logo-color);
+}
+.modal-check-field {
+  display: flex;
+  align-items: center;
+}
+.button-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: inherit;
+  font-weight: 700;
+  color: var(--bacground-color);
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  border: none;
+  width: 200px;
+  height: 50px;
+  background-color: var(--hovers-and-logo-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 30px;
+}
+.button-modal:hover,
+.button-modal:focus {
+  background-color: var(--bacground-color-knopka);
 }
 .footer-mg {
   margin-right: 93px;
